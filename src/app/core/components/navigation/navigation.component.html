@@ -1,0 +1,4 @@
+<nav class="nav">
+    <a *ngFor="let item of navigationItems; index as i;"[routerLink]="item.navLink" [routerLinkActive]="item.classActive" 
+        [ngClass]="item.classes" mat-button >{{item.name}}</a>
+</nav>

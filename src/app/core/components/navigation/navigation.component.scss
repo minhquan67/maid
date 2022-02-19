@@ -1,0 +1,58 @@
+@import '../../../../assets/styles/base';
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    height: 100%;
+    .nav-link {
+        font-size: 17px;
+        &::after {
+            border-bottom: 2px solid $white;
+            transform: scaleX(0);  
+            transition: transform 250ms ease-in-out;
+            display:block;
+            content: '';
+        }
+        &:hover, &.active {
+            &::after {
+                transform: scaleX(1); 
+            }
+        }
+    }
+}
+
+@media (max-width: 618px){
+  
+    .nav {
+        .nav-link {
+            font-size: 2.3vw;
+        }
+    }
+      
+}
+
+@media (max-width: 490px){
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 0;
+        .nav-link {
+            color: $primary;
+            font-size: 16px;
+            width: 100%;
+            align-items: flex-start;
+            display: flex;
+            border-bottom: 1px solid $primary;
+            border-radius: 0;
+            &::after { 
+                border-bottom: unset;
+            }
+            &:hover, &.active {
+                border-left: 4px solid $primary;
+                border-radius: 0;
+            }
+        }
+    }   
+}

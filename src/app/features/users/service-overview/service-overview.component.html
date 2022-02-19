@@ -1,0 +1,120 @@
+<section class="services-wrapper">
+    <h1 class="main-title">NHỮNG DỊCH VỤ CỦA GIÚP VIỆC UY TÍN</h1>
+    <div class="services-type">
+        <div class="service-type_detail">
+            <mat-icon>schedule</mat-icon> <h2>Giúp việc theo giờ</h2>
+        </div>
+        <div class="service-type_detail">
+            <mat-icon>brightness_4</mat-icon><h2> Giúp việc ở lại</h2>
+        </div>
+    </div>
+    <div class="services-block">
+        <div class="services-block_title">
+            <h1>GIÚP VIỆC GIA ĐÌNH</h1>
+            <div class="services-detail">
+                <h2>Công việc của người giúp việc</h2>
+                <ul>
+                    <li>
+                        Làm sạch các đồ dùng sinh hoạt trong gia đình.
+                    </li>
+                    <li>
+                        Lau dọn nhà cửa.
+                    </li>
+                    <li>
+                        Dọn dẹp cầu thang.
+                    </li>
+                    <li>
+                        Vệ sinh toilet.
+                    </li>
+                    <li>
+                        Một số công việc khác như đi chợ, nấu cơm...    
+                    </li>
+                    <li>
+                        Lên thực đơn nấu ăn mỗi ngày để có những món ăn ngon nhất cho gia đình.
+                    </li>
+                    <li>
+                        Làm việc theo phân công của gia đình.
+                    </li>
+                </ul>
+                <ng-container *ngTemplateOutlet="contactTemplate">
+                </ng-container>
+            </div>
+            <h1>CHĂM SINH, CHĂM BÉ</h1>
+            <div class="services-detail">
+                <h2>Công việc của người giúp việc chăm sinh, chăm bé</h2>
+                <label>Tùy thuộc vào kinh nghiệm mà người giúp việc có thể làm được nhiều việc khác nhau:</label>
+                <ul>
+                    <li>
+                        Ru bé ngủ, Chơi với bé, Massage cho bé.
+                    </li>
+                    <li>
+                        Vệ sinh cuống rốn cho bé sơ sinh.
+                    </li>
+                    <li>
+                        Trông trẻ khi không có bố mẹ ở gần đó.
+                    </li>
+                    <li>
+                        Nấu ăn cho mẹ và pha sữa cho bé.
+                    </li>
+                    <li>
+                        Có thể hướng dẫn các mẹ chưa có kinh nghiệm chăm sóc con.
+                    </li>
+                    <li>
+                        Hỗ trợ vệ sinh cá nhân cho mẹ mới sinh.
+                    </li>
+                    <li>
+                        Chuẩn bị những món ăn thích hợp với từng độ tuổi của trẻ.
+                    </li>
+                </ul>
+                <ng-container *ngTemplateOutlet="contactTemplate">
+                </ng-container>
+            </div>
+            <h1>CHĂM NGƯỜI GIÀ, NGƯỜI BỆNH</h1>
+            <div class="services-detail">
+                <h2>Công việc của người giúp việc chăm sóc người già, người bệnh</h2>
+                <ul>
+                    <li>
+                        Giúp vệ sinh cá nhân cho người già, người bệnh.
+                    </li>
+                    <li>
+                        Dọn dẹp phòng ốc, giặt dũ quần áo.
+                    </li>
+                    <li>
+                        Dìu người già, người bệnh đi lại dể lưu thông khí huyết.
+                    </li>
+                    <li>
+                        Nhắc nhở người già uống thuốc đúng giờ, đúng toa kê của bác sĩ.
+                    </li>
+                    <li>
+                        Cho người già ăn uống, rửa dọn vật dụng chứa đựng thức ăn.
+                    </li>
+                    <li>
+                        Xoa bóp giảm đau vùng cơ thể đau nhức.
+                    </li>
+                    <li>
+                        Hỗ trợ người già đi bộ, tập thể dục, tham gia câu lạc bộ dành cho người già.
+                    </li>
+                    <li>
+                        Nói chuyện, chăm sóc, tâm sự với các cụ
+                    </li>
+                </ul>
+                <ng-container *ngTemplateOutlet="contactTemplate">
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</section>
+<ng-template #contactTemplate>
+    <div class="services-detail_contact">
+        <h2> Hãy liện hệ với chúng tôi để được tư vấn rõ hơn</h2> 
+        <a class="link"  target="_blank">
+            <img src="../../../../assets/images/zalo.jpg">
+        </a>
+        <a class="link" target="_blank">
+            <img src="../../../../assets/images/Messenger.png">
+        </a>
+        <a class="link" [href]="'tell:'">
+            <mat-icon>phone</mat-icon>
+        </a>        
+    </div>
+</ng-template>

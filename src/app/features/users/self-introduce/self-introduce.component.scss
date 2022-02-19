@@ -1,0 +1,143 @@
+@import '../../../../assets/styles/base';
+.self-introduce-wrapper {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    .title {
+        text-align: center;
+        h1 {
+            color: $primary;
+            font-weight: 500;
+            border-bottom: 1px solid;
+        }
+    }
+    .list-quanlity {        
+        .list-quanlity-row {
+            display: flex;
+            justify-content: space-between;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            
+            &.single {
+                justify-content: center;
+            }
+            
+            .list-quanlity-block {
+                display: flex;
+                position: relative;
+
+                .mat-card {
+                    background-color: $white;
+                    color: $black;
+                    text-align: center;
+                    box-shadow: none;
+                    cursor: pointer;
+                    justify-content: center;
+                    justify-items: center;
+                    .mat-card-title-group {
+                        align-items: center;
+                        .mat-card-title {
+                            img {
+                                width: 175px;
+                                height: auto;
+                            }
+                        }
+                        p {
+                            text-align: justify;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1120px) and (min-width: 668px) {
+    .self-introduce-wrapper {
+        
+        .title {
+            
+            h1 {
+                
+            }
+        }
+    
+        .list-quanlity {
+    
+            .list-quanlity-row {
+                
+                .list-quanlity-block {
+                    .mat-card {
+                        .mat-card-title-group {
+                            .mat-card-title {
+                                img {
+                                    width: 12vw;
+                                    height: auto;
+                                }
+                            }
+                            p {
+                                font-size: 1.5vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 667px){
+    .self-introduce-wrapper {
+        
+        .title {
+            
+            h1 {
+                
+            }
+        }
+    
+        .list-quanlity {
+    
+            .list-quanlity-row {
+                width: 100%;
+                .list-quanlity-block {
+                    width: 100%;
+                    margin: 10px;
+                    .mat-card {
+                        width: 100%;
+                        .mat-card-title-group {
+                            .mat-card-title {
+                                img {
+                                    width: 30vw;
+                                }
+                            }
+                            p {
+                                font-size: 3.5vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px){
+    .self-introduce-wrapper {
+        
+        .title {
+            
+            h1 {
+                font-size: 5vw;
+            }
+        }
+    
+    }
+}

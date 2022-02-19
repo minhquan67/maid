@@ -1,0 +1,65 @@
+@import '../assets/styles/base';
+app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: $primary_background;
+    color: $white;
+    text-align: center;
+}
+.wrapper {
+    height: 100%;
+    position: absolute;
+    top: 55px;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    .sidenav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        background-color: $white;
+        ::ng-deep .mat-drawer-inner-container {
+            overflow: hidden;
+        }
+    }
+    .mat-drawer-content {
+        max-height: 95vh;
+        height: unset;
+        .main {
+            height: 100%;
+            min-height: 87vh;
+            background-color: $blur;
+            overflow: hidden;
+            color: $black;
+            padding-bottom: 65px;
+            .container {
+                height: 100%;
+            }
+        }   
+    }
+}
+
+@media (max-width: 1160px){ 
+    .wrapper {
+        .main {
+            .container {
+                padding: 0;
+            }
+        }
+    }
+
+    .footer {
+       font-size: 2vw; 
+    }
+}

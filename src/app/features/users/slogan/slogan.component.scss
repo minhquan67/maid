@@ -1,0 +1,138 @@
+@import '../../../../assets/styles/base';
+
+.slogan-wrapper {
+
+    background-color: $white;
+    color: $primary;
+    height: auto;
+
+    .container {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        justify-content: space-around;
+
+        .slogan {
+            align-self: center;
+            text-align: center;
+        }
+
+        .contact-chanel {
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+
+            .chanel-block {
+                margin-left: 30px;
+                .link {
+                    color: $primary;
+                    text-decoration: none;
+                    cursor: pointer;
+                    img {
+                        width: 50px;
+                        vertical-align: middle;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                    .mat-icon {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 910px){ 
+    .slogan-wrapper {
+        
+        .container {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 768px){ 
+    .slogan-wrapper {
+        padding: 0;
+        .container {
+            margin-right: 0;
+            margin-left: 0;
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
+
+@media (max-width: 535px){ 
+    .slogan-wrapper {
+
+        .container {
+            
+            .slogan {
+               h3 {
+                   font-size: 3.8vw;
+               }
+               p {
+                   font-size: 4vw;
+               }
+            }
+    
+            .contact-chanel {
+    
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: space-around;
+                .chanel-block {
+                    margin-left: 0;
+                    .link {
+                        cursor: pointer;
+                        img {
+                            width: 11vw;
+                        }
+                        p {
+                            font-size: 4vw;
+                        }
+                        .mat-icon {
+                            font-size: 9.5vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px){ 
+    .slogan-wrapper {
+
+        .container {
+    
+            .contact-chanel {
+    
+                .chanel-block {
+                   
+                    .link {
+                        
+                        img {
+                            width: 50px;
+                            
+                        }
+                        p {
+                            font-size: 16px;
+                        }
+                        .mat-icon {
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

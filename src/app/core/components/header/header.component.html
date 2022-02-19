@@ -1,0 +1,14 @@
+<mat-toolbar color="primary" class="toolbar">
+    <div class="container" *ngIf="companyInfo$ | async as companyInfo">
+        <header class="header">
+            <div class="img-logo">
+                <img [src]="companyInfo.logo" routerLink="/" [alt]="companyInfo.altLogo" [title]="companyInfo.altLogo">
+                <mat-icon class="home-icon" routerLink="/">home</mat-icon>
+            </div>
+            <div class="menu">
+                <app-navigation></app-navigation>
+                <mat-icon class="menu-icon" (click)="menuToggle()">menu</mat-icon>
+            </div>
+        </header>
+    </div>
+</mat-toolbar>

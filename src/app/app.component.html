@@ -1,0 +1,18 @@
+
+<app-header (sideBarToggle)="sideBarToggle()"></app-header>
+<mat-sidenav-container class="wrapper" mode="over"  hasBackdrop="true">
+    <mat-sidenav #sidenav mode="side" class="sidenav" [fixedInViewport]="false">
+        <app-navigation></app-navigation>
+    </mat-sidenav>
+    <mat-sidenav-content >
+        <div class="main">
+            <div class="container">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+<app-footer class="footer"></app-footer>
+<!-- <main class="main-large">
+    <router-outlet></router-outlet>
+</main> -->

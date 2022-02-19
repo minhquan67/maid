@@ -1,0 +1,28 @@
+<mat-toolbar class="slogan-wrapper" *ngIf="companyInfo$ | async as companyInfo">
+    <div class="container">
+        <div class="slogan">
+            <h3>Bạn cần tư vấn dịch vụ giúp việc hãy liên hệ với chúng tôi</h3>
+            <p>Chuyên Nghiệp - Tận Tâm - Uy Tín</p>
+        </div>
+        <div class="contact-chanel">
+            <div class="chanel-block">
+                <a class="link" [href]="companyInfo.zaloLink" target="_blank">
+                    <img src="../../../../assets/images/zalo.jpg">
+                    <p>{{ companyInfo.zaloLabel }}</p>
+                </a>
+            </div>
+            <div class="chanel-block">
+                <a class="link" [href]="companyInfo.mesengerLink" target="_blank">
+                    <img src="../../../../assets/images/Messenger.png">
+                    <p>{{ companyInfo.mesengerLabel }}</p>
+                </a>
+            </div>
+            <div class="chanel-block">
+                <a class="link" [href]="'tell:'+companyInfo.phone">
+                    <mat-icon>phone</mat-icon>
+                    <p>{{ companyInfo?.phone }}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</mat-toolbar>

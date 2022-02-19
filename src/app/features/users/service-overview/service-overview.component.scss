@@ -1,0 +1,132 @@
+@import '../../../../assets/styles/base';
+.services-wrapper {
+    margin-top: 20px;
+    .services-type {
+        display: flex;
+        font-size: 20px;
+        color: $primary;
+        margin-bottom: 15px;
+        .service-type_detail {
+            display: flex;
+            align-items: center;
+            padding-right: 10px;
+            .mat-icon {
+                padding-right: 5px;
+            }
+            h2 {
+                margin: 0;
+            }
+        }
+    }
+    .services-block_title {
+        h1 {
+            padding: 4px;
+            border-left: 5px solid;
+            border-bottom: 2px solid;
+            width: 350px;
+            color: $primary;
+        }
+        .services-detail {
+            label {
+                font-size: 16px;
+            }
+            h2 {
+                margin-top: 10px;
+            }
+
+            ul {
+                font-size: 18px;
+                margin-bottom: unset;
+                margin-top: unset;
+            }
+
+            .services-detail_contact {
+                align-items: center;
+                display: flex;
+
+                .link {
+                    img {
+                        width: 25px;
+                        height: auto;
+                        cursor: pointer;
+                        margin-left: 10px;
+                        margin-right: 5px;
+                    }
+                    .mat-icon {
+                        margin-left: 8px;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 529px){
+  
+    .services-wrapper {
+        h1 {
+            font-size: 5.1vw;
+        }
+        .services-block_title {
+            .services-detail {
+                ul {
+                    li {
+                        font-size: 4vw;
+                    }
+                }
+                h2 {
+                    font-size: 4.2vw;
+                }
+                .services-detail_contact {
+                    h2 {
+                        font-size: 3.4vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 414px){
+  
+    .services-wrapper {
+        .main-title {
+            text-align: center;
+        }
+        .services-type {
+            
+            .service-type_detail {
+                
+                .mat-icon {
+                    font-size: 24px;
+                }
+                h2 {
+                    font-size: 16px;
+                }
+            }
+        }
+        .services-block_title {
+            .services-detail {
+                
+                h2 {
+                    font-size: 4.2vw;
+                }
+                .services-detail_contact {
+                    .link {
+                        img {
+                            width: 20px;
+                        }
+                        .mat-icon {
+                            font-size: 20px;
+                        }
+                    }
+                    h2 {
+                        font-size: 3vw;
+                    }
+                }
+            }
+        }
+    }
+      
+}
