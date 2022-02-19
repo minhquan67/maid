@@ -1,13 +1,15 @@
 {
   "name": "reivew-maid-servie-app",
   "version": "0.0.0",
+  "engines": { "node": "v14.17.6", "npm": "6.14.15" },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "heroku-postbuild": "ng build — prod"
   },
   "private": true,
   "dependencies": {
@@ -26,6 +28,8 @@
     "@ngrx/entity": "^13.0.2",
     "@ngrx/store": "^13.0.2",
     "animate.css": "^4.1.1",
+    "express": "^4.17.3",
+    "path": "^0.12.7",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
